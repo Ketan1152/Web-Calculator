@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calc-main">
+        <div id="output">
+            <div id="display"></div>
+            <div id="display-output"></div>
+        </div>
+        <div id="input">
+            <!-- <div class="keys" onclick="reciprocal()">⅟x</div> -->
+            <div class="keys" onclick="clearDisplay()">C</div>
+            <div class="keys" onclick="operation('+')">+</div>
+            <div class="keys" onclick="operation('-')">-</div>
+            <div class="keys" onclick="pop()">⇦</div>
+            <div class="keys" onclick="numClicked(7)">7</div>
+            <div class="keys" onclick="numClicked(8)">8</div>
+            <div class="keys" onclick="numClicked(9)">9</div>
+            <div class="keys" onclick="operation('x')">x</div>
+            <div class="keys" onclick="numClicked(4)">4</div>
+            <div class="keys" onclick="numClicked(5)">5</div>
+            <div class="keys" onclick="numClicked(6)">6</div>
+            <div class="keys" onclick="operation('÷')">÷</div>
+            <div class="keys" onclick="numClicked(1)">1</div>
+            <div class="keys" onclick="numClicked(2)">2</div>
+            <div class="keys" onclick="numClicked(3)">3</div>
+            <div class="keys" style="grid-row: 4 / span 2; grid-column: 4 / span 1;"
+                    onclick="solve();">=</div>
+            <div class="keys" onclick="signChange()">±</div>
+            <div class="keys" onclick="numClicked(0)">0</div>
+            <div class="keys" onclick="numClicked('.')">.</div>
+        </div>
+    </div>
+</body>
+</html>

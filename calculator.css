@@ -1,0 +1,82 @@
+body{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+#calc-main{
+    height: 70vh;
+    width: 25vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5em solid orange;
+    border-radius: 15%;
+    overflow: hidden;
+}
+#output{
+    background-color: #222;
+    height: 25%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+#display, #display-output{
+    font-size: 2em;
+    min-width: 100px;
+    text-align: right;
+}
+#display{
+    color: #bbb;
+}
+#display-output{
+    color: white;
+}
+#input{
+    background-color: white;
+    height: 75%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1%;
+    padding: 1%;
+}
+.keys{
+    background-color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: default;
+}
+
+@media screen and (max-width: 1200px) {
+    #calc-main{
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #calc-main{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #calc-main{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #calc-main{
+        width: 60vw;
+    }
+}
