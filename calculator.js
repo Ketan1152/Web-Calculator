@@ -44,7 +44,7 @@ function operation(oper){
             res=document.getElementById("display-output").innerText;
         }
     } else{
-        res=document.getElementById("display-output").innerText;
+        res=parseFloat(document.getElementById("display-output").innerText);
         document.getElementById("display").innerText += res;
         document.getElementById("display").innerText += oper;
     }

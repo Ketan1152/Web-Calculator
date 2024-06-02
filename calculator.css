@@ -4,18 +4,15 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    margin: 0;
 }
 #calc-main{
-    height: 70vh;
-    width: 25vw;
+    height: 100vh;
+    width: 100vw;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1.5em solid orange;
-    border-radius: 15%;
-    overflow: hidden;
 }
 #output{
     background-color: #222;
@@ -56,7 +53,7 @@ body{
     font-size: 30px;
     cursor: default;
 }
-
+/*
 @media screen and (max-width: 1200px) {
     #calc-main{
         width: 35vw;
@@ -79,4 +76,4 @@ body{
     #calc-main{
         width: 60vw;
     }
-}
+}*/
