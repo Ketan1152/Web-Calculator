@@ -23,13 +23,11 @@ function pop(){
     }
 }
 function signChange(){
+    if(document.getElementById("display-output").innerText==""){
+        return;
+    }
     document.getElementById("display-output").innerText=-parseFloat(document.getElementById("display-output").innerText);
 }
-// function reciprocal(){
-//     if (document.getElementById("display")!=""){
-//         document.getElementById("display").innerText="1/("+document.getElementById("display").innerText+")";
-//     }
-// }
 function operation(oper){
     if(solveCalled){
         document.getElementById("display").innerText="";
